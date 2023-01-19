@@ -1,0 +1,2 @@
+val jsonString = File("./src/test/resources/product.json").readText(Charsets.UTF_8)
+val productMock = Gson().fromJson(jsonString, Product::class.java)
